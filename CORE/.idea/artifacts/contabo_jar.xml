@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="contabo:jar">
+    <output-path>$PROJECT_DIR$/classes/artifacts/contabo_jar</output-path>
+    <root id="archive" name="Cryptocurrency.jar">
+      <element id="module-output" name="Cryptocurrency" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../bcprov-jdk15to18-168.jar" path-in-jar="/" />
+      <element id="file-copy" path="$PROJECT_DIR$/../bcprov-jdk15to18-168.jar" />
+    </root>
+  </artifact>
+</component>
