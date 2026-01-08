@@ -22,7 +22,7 @@ class Restnode extends CI_Controller {
 	public function index(){
 	    	// Membuat array data
                 $data = [
-                    ["ip" => "http://localhost:8089/node1/index.php", "hostname" => "host1"],
+                    ["ip" => "http://localhost:8089/BLOCKCHAIN/JAVA/BLOCKCHAIN-SCRATCH-JAVA-PHP/node1/index.php", "hostname" => "host1"],
                     ["ip" => "https://blockchain.jogjaide.web.id/node2", "hostname" => "host2"]
                 ];
                 

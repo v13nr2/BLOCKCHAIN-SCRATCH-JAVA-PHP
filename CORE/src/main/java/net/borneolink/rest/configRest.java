@@ -3,7 +3,7 @@ package net.borneolink.rest;
 public class configRest {
 
     public String xApikey0 = "E52609EA0BACA8B27AFAD0C826D8B5A4";
-    public String base_url0 = "http://localhost:8089/node1/index.php";
+    public String base_url0 = "http://localhost:8089/BLOCKCHAIN/JAVA/BLOCKCHAIN-SCRATCH-JAVA-PHP/node1/index.php";
     public String register_url0 = base_url0 + "/register/add";
     public String listNodes_url0 = base_url0 + "/ipnodes";
     public String restNodes_url0 = base_url0 + "/restnode";
