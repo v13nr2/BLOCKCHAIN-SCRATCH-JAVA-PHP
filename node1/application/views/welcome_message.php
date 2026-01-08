@@ -89,8 +89,8 @@
 		  foreach($blocks as $block){ ?>
 		     <tr>
               <td class="p-3 text-left"><?php echo ++$no;?></td>
-              <td class="p-3 text-left"><?php echo $block["prevhash"];?></td>
               <td class="p-3 text-left"><?php echo $block["hash"];?></td>
+              <td class="p-3 text-left"><?php echo $block["prevhash"];?></td>
               <td class="p-3 text-left"><?php echo $block["date_created"];?></td>
             </tr>
 		  <?php } ?>
