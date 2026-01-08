@@ -82,12 +82,19 @@
               <th class="p-3 text-left">Hash</th>
               <th class="p-3 text-left">Prev Hash</th>
               <th class="p-3 text-left">Timestamp</th>
-              <th class="p-3 text-left">Tx Count</th>
-              <th class="p-3 text-left">Miner</th>
-              <th class="p-3 text-left">Action</th>
             </tr>
           </thead>
-          <tbody id="blocksTable" class="divide-y"></tbody>
+          <tbody id="nonce" class="divide-y">
+		  <?php
+		  foreach($blocks as $block){ ?>
+		     <tr>
+              <td class="p-3 text-left"><?php echo ++$no;?></td>
+              <td class="p-3 text-left"><?php echo $block["prevhash"];?></td>
+              <td class="p-3 text-left"><?php echo $block["hash"];?></td>
+              <td class="p-3 text-left"><?php echo $block["date_created"];?></td>
+            </tr>
+		  <?php } ?>
+		  </tbody>
         </table>
       </div>
       <div class="p-4 flex items-center justify-between">
