@@ -178,32 +178,8 @@ public class peerTask {
                 //br.close();
                 System.out.println(sb.toString());
 
-//                final String HTML = sb.toString();
-//                Document document = Jsoup.parse(HTML);
-//                Element table = document.select("table").first();
-//                String arrayName = table.select("th").first().text();
-//                JSONObject jsonObj = new JSONObject();
-//                JSONArray jsonArr = new JSONArray();
-//                //Elements ttls = table.getElementsByClass("ttl");
-//                //Elements nfos = table.getElementsByClass("nfo");
-//
-//                Elements ttls = table.getElementsByTag("th");
-//                Elements nfos = table.getElementsByTag("td");
-//
-//
-//                JSONObject jo = new JSONObject();
-//                for (int i = 0, l = ttls.size(); i < l; i++) {
-//                    String key = ttls.get(i).text();
-//                    String value = nfos.get(i).text();
-//                    jo.put(key, value);
-//                }
-//                jsonArr.put(jo);
-//                jsonObj.put(arrayName, jsonArr);
-//                System.out.println(jsonObj.toString());
-
-
-                //System.out.println("DATA = "+status);
                 System.out.println("DATA BLOCK TERKIRIM");
+                System.out.println("");
 
 
             } catch (IOException e) {
@@ -270,37 +246,14 @@ public class peerTask {
                 while ((line = br.readLine()) != null) {
                     //sb.append(line + "\n");
                     sb.append(line);
+                    System.out.println("HTTP STATUS = "
+                            + urlConnection.getResponseCode()
+                            + " "
+                            + urlConnection.getResponseMessage());
                 }
 
-                //br.close();
-                //System.out.println(sb.toString());
-
-//                final String HTML = sb.toString();
-//                Document document = Jsoup.parse(HTML);
-//                Element table = document.select("table").first();
-//                String arrayName = table.select("th").first().text();
-//                JSONObject jsonObj = new JSONObject();
-//                JSONArray jsonArr = new JSONArray();
-//                //Elements ttls = table.getElementsByClass("ttl");
-//                //Elements nfos = table.getElementsByClass("nfo");
-//
-//                Elements ttls = table.getElementsByTag("th");
-//                Elements nfos = table.getElementsByTag("td");
 
 
-//                JSONObject jo = new JSONObject();
-//                for (int i = 0, l = ttls.size(); i < l; i++) {
-//                    String key = ttls.get(i).text();
-//                    String value = nfos.get(i).text();
-//                    jo.put(key, value);
-//                }
-//                jsonArr.put(jo);
-//                jsonObj.put(arrayName, jsonArr);
-                //v13System.out.println(jsonObj.toString());
-
-
-                //v13System.out.println("DATA = "+status);
-                System.out.println("DATA TRANSAKSI TERKIRIM");
 
 
             } catch (IOException e) {
